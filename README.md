@@ -9,4 +9,6 @@ window.addEventListener('keyup', (e) => {
 
   console.info('Current Tab Focus: ', document.activeElement);
 });
+
+window.addEventListener('keyup', (e) => if (e.key === 'Tab') {console.info('Current Tab Focus: ', document.activeElement)});
 ```
