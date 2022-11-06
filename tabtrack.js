@@ -1,6 +1,7 @@
 window.addEventListener('keyup', (e) => {
 
-  if (e.key !== 'Tab') return;
+  if (e.key === 'Tab') {
 
-  console.info('Current Tab Focus: ', document.activeElement);
+    console.info('Current Tab Focus: ', document.activeElement);
+  }
 });
