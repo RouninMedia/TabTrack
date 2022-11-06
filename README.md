@@ -5,12 +5,11 @@ TabTrack is a super-simple JavaScript function for tracking which element curren
 ```js
 window.addEventListener('keyup', (e) => {
 
-  if (e.key !== 'Tab') return;
+  if (e.key === 'Tab') {
 
-  console.info('Current Tab Focus: ', document.activeElement);
+    console.info('Current Tab Focus: ', document.activeElement);
+  }
 });
-
-window.addEventListener('keyup', (e) => if (e.key === 'Tab') {console.info('Current Tab Focus: ', document.activeElement)});
 ```
 
 ## TabTrack (one-line)
