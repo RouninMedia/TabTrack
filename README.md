@@ -12,3 +12,8 @@ window.addEventListener('keyup', (e) => {
 
 window.addEventListener('keyup', (e) => if (e.key === 'Tab') {console.info('Current Tab Focus: ', document.activeElement)});
 ```
+
+## TabTrack (one-line)
+```js
+window.addEventListener('keyup', (e) => {if (e.key === 'Tab') {console.info('Current Tab Focus: ', document.activeElement)}});
+```
